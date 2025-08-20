@@ -33,7 +33,7 @@ const Footer = () => {
     icon: <Linkedin className="h-5 w-5" />,
     href: "https://www.linkedin.com/company/auranex-realty/"
   }];
-  return <footer className="bg-secondary text-secondary-foreground">
+  return <footer className="bg-secondary text-secondary-foreground text-left">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-12">

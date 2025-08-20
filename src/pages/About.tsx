@@ -28,8 +28,11 @@ const About = () => {
     title: "Transparency & Trust",
     description: "No hidden costs, no guesswork - just honest communication and exceptional results."
   }];
-  return <div className="min-h-screen bg-background text-center">
+  return <div className="min-h-screen bg-background">
       <Navigation />
+      
+      {/* Root wrapper without global text-center to keep footer aligned */}
+      
       
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-br from-muted to-background">
@@ -74,6 +77,8 @@ const About = () => {
                 src={aboutConstruction1} 
                 alt="Premium construction project by Auranex Realty" 
                 className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -89,6 +94,8 @@ const About = () => {
                 src={aboutConstruction2} 
                 alt="Luxury residential project execution" 
                 className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
@@ -107,14 +114,6 @@ const About = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <img 
-                src={aboutConstruction3} 
-                alt="Modern architectural innovation by Auranex" 
-                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
-              />
-            </div>
-            
             <div>
               <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
@@ -133,6 +132,15 @@ const About = () => {
                   </Button>
                 </Link>
               </div>
+            </div>
+            <div className="relative">
+              <img 
+                src={aboutConstruction3} 
+                alt="Modern architectural innovation by Auranex" 
+                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </div>

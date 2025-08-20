@@ -72,7 +72,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Preview */}
+      {/* Built on Excellence Section - Part 1 */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center text-center lg:text-left">
@@ -81,7 +81,7 @@ const Index = () => {
                 About Auranex
               </Badge>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary md:text-foreground mb-6">
-                Crafted with Soul,{" "}
+                Built on Excellence,{" "}
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-slate-950">
                   Designed to Inspire
                 </span>
@@ -122,6 +122,48 @@ const Index = () => {
                   <h4 className="font-semibold text-sm sm:text-base mb-2">Our Process</h4>
                   <p className="text-xs sm:text-sm opacity-90">Transparency, precision, and excellence in every step</p>
                 </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Built on Excellence Section - Part 2 with Visual */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <img 
+                src="/lovable-uploads/882122d1-34a2-4ef1-b5c0-bbca99032a2f.png" 
+                alt="Architectural vision - from concept to reality" 
+                className="w-full h-auto rounded-lg shadow-premium"
+              />
+            </div>
+            <div className="order-1 lg:order-2 text-center lg:text-left">
+              <Badge variant="outline" className="mb-4 text-primary border-primary/20">
+                Our Vision
+              </Badge>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-primary md:text-foreground mb-6">
+                From Concept to{" "}
+                <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-slate-950">
+                  Architectural Reality
+                </span>
+              </h2>
+              <div className="space-y-4 text-lg text-slate-900 md:text-muted-foreground mb-8">
+                <p>
+                  Every great structure begins with a vision. At Auranex Realty, we transform conceptual 
+                  sketches into magnificent architectural realities that stand as testaments to innovation and craftsmanship.
+                </p>
+                <p>
+                  Our approach combines traditional expertise with modern technology, ensuring each project 
+                  reflects both timeless quality and contemporary excellence.
+                </p>
+              </div>
+              <Link to="/projects">
+                <Button variant="orange" size="lg" className="group">
+                  View Our Projects
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

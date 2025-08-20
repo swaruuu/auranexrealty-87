@@ -36,22 +36,25 @@ const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
           {/* Company Info */}
-          <div className="md:col-span-2">
+          <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
               <img src="/lovable-uploads/312ff991-ddfc-4d46-958b-58fdea8391dd.png" alt="Auranex Realty Logo" className="h-12 w-12" />
               <div className="font-display font-bold text-xl text-white">
                 Auranex Realty
               </div>
             </div>
-            <p className="text-white/80 leading-relaxed mb-6 max-w-md">
+            <p className="text-white/80 leading-relaxed mb-6">
               Excellence in construction execution, delivering luxury spaces with 
               precision, integrity, and unmatched craftsmanship.
             </p>
-            
-            {/* Contact Info Grid */}
-            <div className="grid sm:grid-cols-3 gap-4 text-sm text-white/70">
+          </div>
+
+          {/* Contact Info - Center Column */}
+          <div className="lg:col-span-1">
+            <h3 className="font-display text-lg font-semibold text-white mb-6">Contact Information</h3>
+            <div className="space-y-4 text-sm text-white/70">
               <div className="flex items-start space-x-3">
                 <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
                   <MapPin className="h-4 w-4 text-primary" />
@@ -101,8 +104,8 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links - far right */}
-          <div className="md:justify-self-end">
+          {/* Quick Links - Right Column */}
+          <div className="lg:col-span-1">
             <h3 className="font-display text-lg font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map(link => <li key={link.name}>

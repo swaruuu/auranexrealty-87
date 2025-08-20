@@ -110,20 +110,11 @@ const Contact = () => {
                           <h3 className="font-semibold text-foreground mb-1">
                             {info.title}
                           </h3>
-                          {info.link ? (
-                            <a 
-                              href={info.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="text-primary font-medium mb-1 hover:underline block"
-                            >
+                          {info.link ? <a href={info.link} target="_blank" rel="noopener noreferrer" className="text-primary font-medium mb-1 hover:underline block">
                               {info.details}
-                            </a>
-                          ) : (
-                            <p className="text-primary font-medium mb-1">
+                            </a> : <p className="text-primary font-medium mb-1">
                               {info.details}
-                            </p>
-                          )}
+                            </p>}
                           <p className="text-sm text-muted-foreground">
                             {info.description}
                           </p>
@@ -136,29 +127,7 @@ const Contact = () => {
               {/* CTA Cards */}
               <div className="mt-8 space-y-4">
                 <Card className="gradient-sophisticated text-white shadow-elegant border-0">
-                  <CardContent className="p-6 text-center">
-                    <h3 className="font-display text-xl font-bold mb-2">
-                      Contact Form
-                    </h3>
-                    <p className="mb-4 opacity-90">
-                      Have a question or want to discuss a project? Send us a message.
-                    </p>
-                    <Button 
-                      variant="warm" 
-                      size="sm"
-                      onClick={() => {
-                        const formElement = document.getElementById('contact-form');
-                        if (formElement) {
-                          formElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                          });
-                        }
-                      }}
-                    >
-                      Inquire Now
-                    </Button>
-                  </CardContent>
+                  
                 </Card>
               </div>
             </div>

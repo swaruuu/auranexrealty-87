@@ -132,11 +132,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src="/lovable-uploads/882122d1-34a2-4ef1-b5c0-bbca99032a2f.png" 
-                alt="Architectural vision - from concept to reality" 
-                className="w-full h-auto rounded-lg shadow-premium"
-              />
+              
             </div>
             <div className="order-1 lg:order-2 text-center lg:text-left">
               <Badge variant="outline" className="mb-4 text-primary border-primary/20">

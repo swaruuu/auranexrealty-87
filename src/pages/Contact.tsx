@@ -71,14 +71,14 @@ const Contact = () => {
       {/* Contact Form & Info */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
             {/* Contact Form */}
-            <div>
+            <div className="order-1 lg:order-1">
               <div className="mb-8">
-                <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                <h2 className="font-display text-3xl font-bold text-foreground mb-4 text-left">
                   Send an Enquiry
                 </h2>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground text-left">
                   Fill out the form below and we'll get back to you within 24 hours 
                   with a personalized response to your inquiry.
                 </p>
@@ -88,12 +88,12 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div>
+            <div className="order-2 lg:order-2">
               <div className="mb-8">
-                <h2 className="font-display text-3xl font-bold text-foreground mb-4">
+                <h2 className="font-display text-3xl font-bold text-foreground mb-4 text-left">
                   Get In Touch
                 </h2>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-muted-foreground text-left">
                   Multiple ways to connect with our team. We're here to answer your questions 
                   and guide you through every step of your project.
                 </p>

@@ -103,32 +103,33 @@ const About = () => {
       {/* Built on Excellence - Section 3 */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+          <div className="text-center mb-12">
+            <div className="relative mb-12">
+              <img 
+                src="/src/assets/construction-4.webp" 
+                alt="Modern architectural innovation by Auranex" 
+                className="rounded-2xl shadow-elegant w-full max-w-2xl mx-auto h-[400px] object-cover"
+              />
+            </div>
+            
+            <div className="max-w-4xl mx-auto">
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed text-center mb-8">
                 <p>
                   Our approach combines traditional craftsmanship with modern innovation, ensuring every project we deliver exceeds expectations and creates lasting value for our clients and communities. From initial concept to final handover, we maintain the highest standards of quality, safety, and sustainability.
                 </p>
-                <p className="text-primary font-medium">
+                <p className="text-primary font-medium text-xl">
                   "Luxury rooted in trust, crafted for the modern world."
                 </p>
               </div>
+              
               <div className="mt-8">
                 <Link to="/contact">
                   <Button variant="premium" size="lg" className="group">
-                    Start Your Project
+                    Transform Your Vision
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </Button>
                 </Link>
               </div>
-            </div>
-            
-            <div className="relative">
-              <img 
-                src="/src/assets/construction-4.webp" 
-                alt="Modern architectural innovation by Auranex" 
-                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
-              />
             </div>
           </div>
         </div>

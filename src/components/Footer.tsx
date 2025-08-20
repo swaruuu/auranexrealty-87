@@ -36,11 +36,11 @@ const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-6">
-              <img src="/lovable-uploads/312ff991-ddfc-4d46-958b-58fdea8391dd.png" alt="Auranex Realty Logo" className="h-12 w-12" />
+            <div className="flex items-center space-x-4 mb-6">
+              <img src="/lovable-uploads/312ff991-ddfc-4d46-958b-58fdea8391dd.png" alt="Auranex Realty Logo" className="h-12 w-12 flex-shrink-0" />
               <div className="font-display font-bold text-xl text-white">
                 Auranex Realty
               </div>
@@ -51,27 +51,27 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact Info - Address */}
+          {/* Contact Info */}
           <div className="lg:col-span-1">
-            <h3 className="font-display text-lg font-semibold text-white mb-6">Address</h3>
-            <div className="flex items-start space-x-3">
-              <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
-                <MapPin className="h-4 w-4 text-primary" />
+            <h3 className="font-display text-lg font-semibold text-white mb-6">Contact Info</h3>
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
+                  <MapPin className="h-4 w-4 text-primary" />
+                </div>
+                <div>
+                  <a 
+                    href="https://share.google/49bMd1n2X4WXezVb4" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-white/70 hover:text-primary hover:underline text-sm leading-relaxed"
+                  >
+                    Disha Vaibhav Complex, Aurangapura, Chh. Sambhajinagar
+                  </a>
+                </div>
               </div>
-              <div>
-                <a 
-                  href="https://share.google/49bMd1n2X4WXezVb4" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-white/70 hover:text-primary hover:underline text-sm"
-                >
-                  Disha Vaibhav Complex, Aurangapura, Chh. Sambhajinagar
-                </a>
-              </div>
-            </div>
-            
-            <div className="mt-6">
-              <div className="flex items-start space-x-3 mb-4">
+              
+              <div className="flex items-start space-x-3">
                 <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>

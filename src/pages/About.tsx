@@ -6,6 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { Users, Target, Award, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
+import aboutConstruction1 from "@/assets/about-construction-1.jpg";
+import aboutConstruction2 from "@/assets/about-construction-2.jpg";
+import aboutConstruction3 from "@/assets/about-construction-3.jpg";
 const About = () => {
   useScrollToTop();
   const values = [{
@@ -68,7 +71,7 @@ const About = () => {
             
             <div className="relative">
               <img 
-                src="/lovable-uploads/882122d1-34a2-4ef1-b5c0-bbca99032a2f.png" 
+                src={aboutConstruction1} 
                 alt="Premium construction project by Auranex Realty" 
                 className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
               />
@@ -83,7 +86,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative">
               <img 
-                src="/src/assets/construction-2-new.webp" 
+                src={aboutConstruction2} 
                 alt="Luxury residential project execution" 
                 className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
               />
@@ -103,17 +106,17 @@ const About = () => {
       {/* Built on Excellence - Section 3 */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="relative mb-12">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
               <img 
-                src="/src/assets/construction-4.webp" 
+                src={aboutConstruction3} 
                 alt="Modern architectural innovation by Auranex" 
-                className="rounded-2xl shadow-elegant w-full max-w-2xl mx-auto h-[400px] object-cover"
+                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
               />
             </div>
             
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed text-center mb-8">
+            <div>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                 <p>
                   Our approach combines traditional craftsmanship with modern innovation, ensuring every project we deliver exceeds expectations and creates lasting value for our clients and communities. From initial concept to final handover, we maintain the highest standards of quality, safety, and sustainability.
                 </p>

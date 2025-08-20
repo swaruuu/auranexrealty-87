@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users, Target, Award, Heart } from "lucide-react";
+import { Users, Target, Award, Heart, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useScrollToTop } from "@/hooks/useScrollToTop";
 const About = () => {
@@ -48,7 +48,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Founder Story */}
+      {/* Built on Excellence - Section 1 */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -63,21 +63,72 @@ const About = () => {
                   spaces that the city has never seen before, delivered through expert project management and 
                   uncompromising quality standards.
                 </p>
-                <p>With a deep commitment to construction excellence, transparency, and putting people first, every project we undertake becomes a landmark of purpose and quality. We don't just execute construction; we craft legacies that stand the test of time and define excellence in the built environment.</p>
-                <p>Our approach combines traditional craftsmanship with modern innovation, ensuring every project we deliver exceeds expectations and creates lasting value for our clients and communities. From initial concept to final handover, we maintain the highest standards of quality, safety, and sustainability.</p>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/882122d1-34a2-4ef1-b5c0-bbca99032a2f.png" 
+                alt="Premium construction project by Auranex Realty" 
+                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Built on Excellence - Section 2 */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <img 
+                src="/src/assets/construction-2-new.webp" 
+                alt="Luxury residential project execution" 
+                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+              />
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  With a deep commitment to construction excellence, transparency, and putting people first, every project we undertake becomes a landmark of purpose and quality. We don't just execute construction; we craft legacies that stand the test of time and define excellence in the built environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Built on Excellence - Section 3 */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  Our approach combines traditional craftsmanship with modern innovation, ensuring every project we deliver exceeds expectations and creates lasting value for our clients and communities. From initial concept to final handover, we maintain the highest standards of quality, safety, and sustainability.
+                </p>
                 <p className="text-primary font-medium">
                   "Luxury rooted in trust, crafted for the modern world."
                 </p>
               </div>
               <div className="mt-8">
                 <Link to="/contact">
-                  
+                  <Button variant="premium" size="lg" className="group">
+                    Start Your Project
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Button>
                 </Link>
               </div>
             </div>
             
             <div className="relative">
-              
+              <img 
+                src="/src/assets/construction-4.webp" 
+                alt="Modern architectural innovation by Auranex" 
+                className="rounded-2xl shadow-elegant w-full h-[400px] object-cover"
+              />
             </div>
           </div>
         </div>

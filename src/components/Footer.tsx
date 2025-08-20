@@ -36,7 +36,7 @@ const Footer = () => {
   return <footer className="bg-secondary text-secondary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
@@ -51,32 +51,32 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact Info - Center Column */}
+          {/* Contact Info - Address */}
           <div className="lg:col-span-1">
-            <h3 className="font-display text-lg font-semibold text-white mb-6">Contact Information</h3>
-            <div className="space-y-4 text-sm text-white/70">
-              <div className="flex items-start space-x-3">
-                <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
-                  <MapPin className="h-4 w-4 text-primary" />
-                </div>
-                <div>
-                  <a 
-                    href="https://share.google/49bMd1n2X4WXezVb4" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-primary hover:underline"
-                  >
-                    Disha Vaibhav Complex, Aurangapura, Chh. Sambhajinagar
-                  </a>
-                </div>
+            <h3 className="font-display text-lg font-semibold text-white mb-6">Address</h3>
+            <div className="flex items-start space-x-3">
+              <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
+                <MapPin className="h-4 w-4 text-primary" />
               </div>
-              
-              <div className="flex items-start space-x-3">
+              <div>
+                <a 
+                  href="https://share.google/49bMd1n2X4WXezVb4" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-primary hover:underline text-sm"
+                >
+                  Disha Vaibhav Complex, Aurangapura, Chh. Sambhajinagar
+                </a>
+              </div>
+            </div>
+            
+            <div className="mt-6">
+              <div className="flex items-start space-x-3 mb-4">
                 <div className="flex-shrink-0 p-2 bg-primary/20 rounded-lg">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
                 <div>
-                  <span>auranexrealty@gmail.com</span>
+                  <span className="text-white/70 text-sm">auranexrealty@gmail.com</span>
                 </div>
               </div>
               
@@ -85,34 +85,36 @@ const Footer = () => {
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
                 <div>
-                  <span>+91 8530253991</span>
+                  <span className="text-white/70 text-sm">+91 8530253991</span>
                 </div>
-              </div>
-            </div>
-
-            {/* Social Media */}
-            <div className="mt-8">
-              <h3 className="font-display text-lg font-semibold text-white mb-4">Connect With Us</h3>
-              <div className="flex space-x-4">
-                <a href="https://www.instagram.com/auranex_realty/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-primary/20 transition-colors" aria-label="Instagram">
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a href="https://www.linkedin.com/posts/auranex-realty_auranexrealty-skylinenext-builddifferent-activity-7338427934510075907-9INP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0IJJsBjXCbB25ropVjJmsbxGzR80cgZsg" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-primary/20 transition-colors" aria-label="LinkedIn">
-                  <Linkedin className="h-5 w-5" />
-                </a>
               </div>
             </div>
           </div>
 
-          {/* Quick Links - Right Column */}
+          {/* Social Media */}
+          <div className="lg:col-span-1">
+            <h3 className="font-display text-lg font-semibold text-white mb-6">Connect With Us</h3>
+            <div className="flex space-x-4">
+              <a href="https://www.instagram.com/auranex_realty/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-primary/20 transition-colors" aria-label="Instagram">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.linkedin.com/posts/auranex-realty_auranexrealty-skylinenext-builddifferent-activity-7338427934510075907-9INP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC0IJJsBjXCbB25ropVjJmsbxGzR80cgZsg" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-primary/20 transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
           <div className="lg:col-span-1">
             <h3 className="font-display text-lg font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {quickLinks.map(link => <li key={link.name}>
-                  <Link to={link.href} className="text-white/70 hover:text-primary transition-colors hover:underline">
+              {quickLinks.map(link => (
+                <li key={link.name}>
+                  <Link to={link.href} className="text-white/70 hover:text-primary transition-colors hover:underline text-sm">
                     {link.name}
                   </Link>
-                </li>)}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

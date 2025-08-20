@@ -36,7 +36,7 @@ const Contact = () => {
     icon: <MapPin className="h-6 w-6" />,
     title: "Visit Us",
     details: "Disha Vaibhav Complex, Aurangapura, Chh. Sambhajinagar",
-    description: "Schedule an office visit",
+    description: "Find us on the map",
     link: "https://share.google/49bMd1n2X4WXezVb4"
   }, {
     icon: <Clock className="h-6 w-6" />,
@@ -76,7 +76,7 @@ const Contact = () => {
             <div>
               <div className="mb-8">
                 <h2 className="font-display text-3xl font-bold text-foreground mb-4">
-                  Get In Touch
+                  Send an Enquiry
                 </h2>
                 <p className="text-lg text-muted-foreground">
                   Fill out the form below and we'll get back to you within 24 hours 

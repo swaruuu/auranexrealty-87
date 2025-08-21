@@ -30,7 +30,7 @@ const ContactForm = () => {
 
     try {
       // Submit to Google Apps Script that will write to the sheet
-      const response = await fetch('https://script.google.com/macros/s/AKfycbxqJ8k5JlO7YjZeNnMxPOIlv5w3gF2tR9iQsK1BhU0VmW2y/exec', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbwZkV3CVUeoRZVJui0QZa2UGWRswm20pEM6YR-tkZIkX0hBfJRFsMCvF-5HkEaOdIiH/exec', {
         method: 'POST',
         mode: 'cors',
         headers: {

@@ -24,7 +24,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/312ff991-ddfc-4d46-958b-58fdea8391dd.png" 
+              src="/lovable-uploads/ef107fae-fa7f-4c5a-b8ff-82c104d5f991.png" 
               alt="Auranex Realty Logo" 
               className="h-12 w-12 transition-smooth hover:scale-105"
             />

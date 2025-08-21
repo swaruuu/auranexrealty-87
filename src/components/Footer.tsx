@@ -76,7 +76,12 @@ const Footer = () => {
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
                 <div>
-                  <span className="text-white/70 text-sm">auranexrealty@gmail.com</span>
+                  <a 
+                    href="mailto:auranexrealty@gmail.com" 
+                    className="text-white/70 text-sm hover:text-primary transition-colors cursor-pointer"
+                  >
+                    auranexrealty@gmail.com
+                  </a>
                 </div>
               </div>
               

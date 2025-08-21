@@ -26,7 +26,8 @@ const Contact = () => {
     icon: <Mail className="h-6 w-6" />,
     title: "Email Us",
     details: "auranexrealty@gmail.com",
-    description: "Send us your project details"
+    description: "Send us your project details",
+    link: "mailto:auranexrealty@gmail.com"
   }, {
     icon: <Phone className="h-6 w-6" />,
     title: "Call Us",

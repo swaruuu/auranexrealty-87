@@ -40,7 +40,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-4 mb-6">
-              <img src="/lovable-uploads/312ff991-ddfc-4d46-958b-58fdea8391dd.png" alt="Auranex Realty Logo" className="h-12 w-12 flex-shrink-0" />
+              <img src="/lovable-uploads/d8bfdd1c-9c77-44bf-944f-af3510e9336f.png" alt="Auranex Realty Logo" className="h-12 w-12 flex-shrink-0" />
               <div className="font-display font-bold text-xl text-white">
                 Auranex Realty
               </div>
